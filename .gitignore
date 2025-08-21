@@ -1,5 +1,95 @@
+## macOS metadata already handled
 .project-management/archive-prd/.DS_Store
 .project-management/.DS_Store
 .project-management/archive-prd/prd-background/.DS_Store
 .project-management/closed-prd/.DS_Store
 .project-management/current-prd/.DS_Store
+
+## Build artifacts
+bin/
+obj/
+
+## Visual Studio / VS Code
+.vs/
+*.code-workspace
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Rider / JetBrains
+.idea/
+*.iml
+
+## Logs / diagnostics
+*.log
+logs/
+TestResult*/
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+## Generated files
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+
+## NuGet
+*.nupkg
+*.snupkg
+packages/
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+
+## Tools / Local
+*.DotSettings.user
+.ionide/
+.templateengine/
+.localhistory/
+
+## Resharper / Analyzer caches
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings
+
+## Coverage tools
+coverage/
+lcov.info
+
+## Azure / Publish Profiles
+PublishProfiles/
+*.pubxml.user
+
+## Environment / Secrets (example env left for docs)
+.env
+!/.env.example
+
+## Misc
+*.tmp
+*.bak
+*.swp
+*.orig
+
+## Dotnet Core specific
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Templating
+*.generated.cs
+
+## BenchmarkDotNet
+BenchmarkDotNet.Artifacts/
+
+## ASP.NET scaffolding
+ScaffoldingReadMe.txt
+
+## Node (if any JS tooling added later)
+node_modules/
+
+## Prevent committing run output
+runs/
