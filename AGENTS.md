@@ -3,11 +3,10 @@
 **This is the only AGENTS.md file, do not look for others.**
 
 ## Special Task Instructions
-- If the user task message consists of just the word 'TaskMaster' then open `.project-management/process-tasks-cloud.md` for instructions, otherwise ignore this file.
-- If the user task message consists of just the word 
-- `CreatePrd` then open `.project-management/create-prd.md` for instructions, otherwise ignore this file.
-- If the user task message consists of just the word `CreateTasks` then open `.project-management/generate-tasks.md` for instructions, otherwise ignore this file.
-- If the user task message consists of just the word `ClosePrd` then open `.project-management/close-prd.md` for instructions, otherwise ignore this file.
+- **TaskMaster Mode** If the user task message consists of just the word `TaskMaster` then open `.project-management/process-tasks-cloud.md` for instructions, otherwise ignore this file.
+- **CreatePrd Mode** If the user task message consists of just the word `CreatePrd` then open `.project-management/create-prd.md` for instructions, otherwise ignore this file.
+- **CreateTasks Mode** If the user task message consists of just the word `CreateTasks` then open `.project-management/generate-tasks.md` for instructions, otherwise ignore this file.
+- **ClosePrd Mode** If the user task message consists of just the word `ClosePrd` then open `.project-management/close-prd.md` for instructions, otherwise ignore this file.
 
 
 

@@ -8,7 +8,7 @@
   - `run_tests.sh`
 
 ## Relevant Files
-- `README.md` - Project overview and 15-phase roadmap context.
+- `.project-management/archive-prd/prd-background/full-project-plan.md` - Project overview and 15-phase roadmap context.
 - `AGENTS.md` - Contributor guide and process constraints for PRD/tasks.
 - `run_tests.sh` - Entry point for smoke tests; to be updated for Phase 1.
 - `dev_init.sh` - Idempotent setup/start script; may need updates when scaffolding.
@@ -30,7 +30,7 @@
 - `run_tests.sh` - Add Phase 1 smoke test to build and assert run artifact creation.
 - `dev_init.sh` - Ensure idempotent environment setup aligns with new .NET projects.
 - `DEVELOPMENT.md` - Add local run instructions and any prerequisites.
-- `README.md` - Add Phase 1 usage snippet if needed.
+- `README.md` - Update as project progresses
 
 ### Notes
 
@@ -40,8 +40,8 @@
 
 ## Tasks
 
-- [ ] 1.0 Scaffold solution and projects
-  - [ ] 1.1 Verify .NET SDK is installed (`dotnet --info`) and version aligns with LTS.
+ - [ ] 1.0 Project Initialization
+   - [ ] 1.1 Verify .NET SDK is installed (`dotnet --info`) and version aligns with LTS.
   - [ ] 1.2 Create solution `ClickAdventure.sln` and projects: `ClickAdventure.Core` (class lib) and `ClickAdventure.Runner` (console app) targeting `net8.0`.
   - [ ] 1.3 Add project reference from Runner to Core and include both in the solution.
   - [ ] 1.4 Establish initial namespaces (`ClickAdventure.Core`, `ClickAdventure.Runner`).
