@@ -38,10 +38,10 @@
 - Keep architecture modular: Core library for models/services; Runner for CLI and composition.
 - Config precedence: CLI > environment > appsettings (documented in `--help`).
 
-## Tasks
+## Tasksdotnet --info
 
  - [ ] 1.0 Project Initialization
-   - [ ] 1.1 Verify .NET SDK is installed (`dotnet --info`) and version aligns with LTS.
+  - [ ] 1.1 Verify .NET SDK is installed (`dotnet --info`) and version aligns with LTS.
   - [ ] 1.2 Create solution `ClickAdventure.sln` and projects: `ClickAdventure.Core` (class lib) and `ClickAdventure.Runner` (console app) targeting `net8.0`.
   - [ ] 1.3 Add project reference from Runner to Core and include both in the solution.
   - [ ] 1.4 Establish initial namespaces (`ClickAdventure.Core`, `ClickAdventure.Runner`).
