@@ -40,24 +40,24 @@
 
 ## Tasksdotnet --info
 
- - [ ] 1.0 Project Initialization
-  - [ ] 1.1 Verify .NET SDK is installed (`dotnet --info`) and version aligns with LTS.
-  - [ ] 1.2 Create solution `ClickAdventure.sln` and projects: `ClickAdventure.Core` (class lib) and `ClickAdventure.Runner` (console app) targeting `net8.0`.
-  - [ ] 1.3 Add project reference from Runner to Core and include both in the solution.
-  - [ ] 1.4 Establish initial namespaces (`ClickAdventure.Core`, `ClickAdventure.Runner`).
-  - [ ] 1.5 Build solution to confirm scaffolding compiles on a clean checkout.
+- [x] 1.0 Project Initialization
+  - [x] 1.1 Verify .NET SDK is installed (`dotnet --info`) and version aligns with LTS.
+  - [x] 1.2 Create solution `ClickAdventure.sln` and projects: `ClickAdventure.Core` (class lib) and `ClickAdventure.Runner` (console app) targeting `net8.0`.
+  - [x] 1.3 Add project reference from Runner to Core and include both in the solution.
+  - [x] 1.4 Establish initial namespaces (`ClickAdventure.Core`, `ClickAdventure.Runner`).
+  - [x] 1.5 Build solution to confirm scaffolding compiles on a clean checkout.
 
-- [ ] 2.0 Implement configuration and `--help`
-  - [ ] 2.1 Add `appsettings.json` to Runner with defaults: `startUrl`, `depth`, `seed`, `headless`.
-  - [ ] 2.2 Implement `Config` model in Core and bind via `Microsoft.Extensions.Configuration`.
-  - [ ] 2.3 Wire configuration providers: JSON (optional), environment variables (prefix `CLICKADVENTURE__`), and command-line args (highest precedence).
-  - [ ] 2.4 Implement minimal CLI parsing to support `--help` and options override; print effective config when running.
-  - [ ] 2.5 Document precedence and supported flags in `--help` output.
+- [x] 2.0 Implement configuration and `--help`
+  - [x] 2.1 Add `appsettings.json` to Runner with defaults: `startUrl`, `depth`, `seed`, `headless`.
+  - [x] 2.2 Implement `Config` model in Core and bind via `Microsoft.Extensions.Configuration`.
+  - [x] 2.3 Wire configuration providers: JSON (optional), environment variables (prefix `CLICKADVENTURE__`), and command-line args (highest precedence).
+  - [x] 2.4 Implement minimal CLI parsing to support `--help` and options override; print effective config when running.
+  - [x] 2.5 Document precedence and supported flags in `--help` output.
 
-- [ ] 3.0 Implement run folder and `run.json` output
-  - [ ] 3.1 Implement `RunInfo` (run ID, timestamp, output root, paths) in Core.
-  - [ ] 3.2 Add `--init` command/flag that creates `runs/<YYYYMMDD_HHMMSS>` at startup.
-  - [ ] 3.3 Serialize `run.json` containing `RunInfo` and effective configuration into the run folder.
+- [c] 3.0 Implement run folder and `run.json` output
+  - [x] 3.1 Implement `RunInfo` (run ID, timestamp, output root, paths) in Core.
+  - [x] 3.2 Add `--init` command/flag that creates `runs/<YYYYMMDD_HHMMSS>` at startup.
+  - [c] 3.3 Serialize `run.json` containing `RunInfo` and effective configuration into the run folder.
   - [ ] 3.4 Ensure graceful exit codes: 0 on success; non-zero with message on failure.
 
 - [ ] 4.0 Wire console logging to stdout and file
