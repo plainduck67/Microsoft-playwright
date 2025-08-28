@@ -1,7 +1,15 @@
 
-# NOTE TO Codex agent: If you are reading this, it means you are bootstraping a new project.
-# It is your responsibility to ensure this script is complete and serves
-# the goal of setting up the development environment from scratch, adding and updating dependencies
-# and starting the application up.  It should be idempotent, meaning it can be run multiple times
-# without causing issues.
-# Remove this preamble after the first implementation is made.
+
+#!/usr/bin/env bash
+set -e
+
+echo "[dev_init.sh] Restoring .NET dependencies..."
+dotnet restore
+
+echo "[dev_init.sh] Building solution..."
+dotnet build
+
+echo "[dev_init.sh] Verifying console app runs..."
+dotnet run --project ClickAdventure.Runner -- --help
+
+echo "[dev_init.sh] Environment setup complete."

@@ -57,24 +57,24 @@
 - [c] 3.0 Implement run folder and `run.json` output
   - [x] 3.1 Implement `RunInfo` (run ID, timestamp, output root, paths) in Core.
   - [x] 3.2 Add `--init` command/flag that creates `runs/<YYYYMMDD_HHMMSS>` at startup.
-  - [c] 3.3 Serialize `run.json` containing `RunInfo` and effective configuration into the run folder.
-  - [ ] 3.4 Ensure graceful exit codes: 0 on success; non-zero with message on failure.
+  - [x] 3.3 Serialize `run.json` containing `RunInfo` and effective configuration into the run folder.
+  - [x] 3.4 Ensure graceful exit codes: 0 on success; non-zero with message on failure.
 
-- [ ] 4.0 Wire console logging to stdout and file
-  - [ ] 4.1 Configure console logging with `Microsoft.Extensions.Logging` at Info level by default.
-  - [ ] 4.2 Add simple file logger that appends to `<run>/run.log` when a run folder exists.
-  - [ ] 4.3 Log startup config summary, run folder path, and shutdown summary.
+- [x] 4.0 Wire console logging to stdout and file
+  - [x] 4.1 Configure console logging with `Microsoft.Extensions.Logging` at Info level by default.
+  - [x] 4.2 Add simple file logger that appends to `<run>/run.log` when a run folder exists.
+  - [x] 4.3 Log startup config summary, run folder path, and shutdown summary.
 
-- [ ] 5.0 Add Phase 1 smoke test in `run_tests.sh`
-  - [ ] 5.1 Add build step: `dotnet build` and fail fast on errors.
-  - [ ] 5.2 Run: `dotnet run --project ClickAdventure.Runner -- --init`.
-  - [ ] 5.3 Assert latest `runs/*` folder exists and contains `run.json`; print path for visibility.
-  - [ ] 5.4 Ensure script exits non-zero if assertions fail.
+- [x] 5.0 Add Phase 1 smoke test in `run_tests.sh`
+  - [x] 5.1 Add build step: `dotnet build` and fail fast on errors.
+  - [x] 5.2 Run: `dotnet run --project ClickAdventure.Runner -- --init`.
+  - [x] 5.3 Assert latest `runs/*` folder exists and contains `run.json`; print path for visibility.
+  - [x] 5.4 Ensure script exits non-zero if assertions fail.
 
-- [ ] 6.0 Update docs (`README.md`, `DEVELOPMENT.md`) and `dev_init.sh`
-  - [ ] 6.1 Add Phase 1 usage instructions to README (build, run, expected output).
-  - [ ] 6.2 Add local development steps to DEVELOPMENT.md (SDK requirement, commands).
-  - [ ] 6.3 Update `dev_init.sh` to idempotently set up environment and start the console app for verification.
-  - [ ] 6.4 Note testing instructions and how to interpret smoke test output.
+- [x] 6.0 Update docs (`README.md`, `DEVELOPMENT.md`) and `dev_init.sh`
+  - [x] 6.1 Add Phase 1 usage instructions to README (build, run, expected output).
+  - [x] 6.2 Add local development steps to DEVELOPMENT.md (SDK requirement, commands).
+  - [x] 6.3 Update `dev_init.sh` to idempotently set up environment and start the console app for verification.
+  - [x] 6.4 Note testing instructions and how to interpret smoke test output.
 
 *End of document*

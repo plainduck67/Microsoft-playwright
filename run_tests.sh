@@ -1,5 +1,22 @@
-# Note to the Coding Agent:  If you are reading this it means you are bootstrapping
-# a new project.  run_tests.sh should be responsible for running all tests in the project,
-# including backend and frontend tests.  It should ensure that all necessary dependencies
-# are installed and that the environment is properly set up before running the tests.
-# Remove this preamble after the first implementation is made.
+
+#!/usr/bin/env bash
+set -e
+
+echo "[run_tests.sh] Building solution..."
+dotnet build
+
+echo "[run_tests.sh] Running --init to create a run folder..."
+dotnet run --project ClickAdventure.Runner -- --init
+
+RUNS_DIR="ClickAdventure.Runner/runs"
+LATEST_RUN=$(ls -td "$RUNS_DIR"/*/ | head -1)
+RUN_JSON="$LATEST_RUN/run.json"
+
+if [[ -d "$LATEST_RUN" && -f "$RUN_JSON" ]]; then
+	echo "[run_tests.sh] ✅ Smoke test passed: $RUN_JSON exists."
+	echo "[run_tests.sh] Run folder: $LATEST_RUN"
+	exit 0
+else
+	echo "[run_tests.sh] ❌ Smoke test failed: $RUN_JSON missing."
+	exit 1
+fi
