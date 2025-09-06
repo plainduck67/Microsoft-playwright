@@ -50,12 +50,12 @@
 
 ## Tasks
 
-- [ ] 1.0 Setup Playwright Dependencies and Configuration
-  - [ ] 1.1 Add Microsoft.Playwright NuGet package to ClickAdventure.Core.csproj
-  - [ ] 1.2 Update Config.cs to include browser configuration properties (IsHeadless, StartUrl, NavigationTimeout)
-  - [ ] 1.3 Update appsettings.json with default Wikipedia URL and browser settings
-  - [ ] 1.4 Update dev_init.sh to install Playwright browsers using `playwright install chromium`
-  - [ ] 1.5 Verify dev_init.sh works and run_tests.sh executes successfully
+- [x] 1.0 Setup Playwright Dependencies and Configuration
+  - [x] 1.1 Add Microsoft.Playwright NuGet package to ClickAdventure.Core.csproj
+  - [x] 1.2 Update Config.cs to include browser configuration properties (IsHeadless, StartUrl, NavigationTimeout)
+  - [x] 1.3 Update appsettings.json with default Wikipedia URL and browser settings
+  - [x] 1.4 Update dev_init.sh to install Playwright browsers using `playwright install chromium`
+  - [x] 1.5 Verify dev_init.sh works and run_tests.sh executes successfully
 
 - [ ] 2.0 Implement Browser Lifecycle Management
   - [ ] 2.1 Create BrowserManager.cs class in ClickAdventure.Core with methods for browser lifecycle

@@ -102,7 +102,7 @@ namespace ClickAdventure.Runner
 					logger = loggerFactory.CreateLogger("Runner");
 				}
 
-				logger.LogInformation($"Config Loaded: StartUrl={appConfig.StartUrl}, Depth={appConfig.Depth}, Seed={appConfig.Seed}, Headless={appConfig.Headless}");
+				logger.LogInformation($"Config Loaded: StartUrl={appConfig.StartUrl}, Depth={appConfig.Depth}, Seed={appConfig.Seed}, Headless={appConfig.IsHeadless}");
 				logger.LogInformation("Shutdown complete.");
 				loggerFactory?.Dispose();
 				return 0;

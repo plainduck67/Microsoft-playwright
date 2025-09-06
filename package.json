@@ -1,0 +1,23 @@
+{
+  "name": "microsoft-playwright",
+  "version": "1.0.0",
+  "description": "### Prerequisites - .NET 8.0 SDK (LTS)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plainduck67/Microsoft-playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plainduck67/Microsoft-playwright/issues"
+  },
+  "homepage": "https://github.com/plainduck67/Microsoft-playwright#readme",
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}
